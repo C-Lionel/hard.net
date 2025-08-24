@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARD.net | Venta de PC, Componentes y Servicios Informáticos</title>
+    <!-- Icono -->
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/icono_HARD.svg">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="site-header__nav navbar navbar-expand-lg">
+
+            <div class="site-header__container container">
+
+                <a class="site-header__logo p-2 w-25 " href="../index.html">
+                    <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
+                </a>
+
+                <button class="bg-white navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="site-header__menu collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="site-header__links navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light" aria-current="page"
+                                href="../pages/productos.html">productos</a>
+                        </li>
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light" aria-current="page"
+                                href="../pages/servicios.html">servicios</a>
+                        </li>
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light" aria-current="page"
+                                href="../pages/ofertas.html">ofertas</a>
+                        </li>
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light active" aria-current="page"
+                                href="../pages/contacto.html">contacto</a>
+                        </li>
+                    </ul>
+
+                    <form class="site-header__search d-flex align-items-center" role="search">
+                        <input class="site-header__search-input form-control me-2" type="search" placeholder="Buscar"
+                            aria-label="Search" />
+                        <button class="site-header__search-button btn btn-outline-info me-2"
+                            type="submit">Buscar</button>
+                        <i class="site-header__i fa-solid fa-user fs-5 me-2"></i>
+                        <i class="site-header__i fa-solid fa-cart-shopping fs-5"></i>
+                    </form>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="site-main-contacto">
+
+        <h1 class="site-main-contacto__title text-center pt-5">Contactanos</h1>
+
+        <div class="site-main-contacto__layout container py-5">
+
+            <!-- Información -->
+
+            <section class="site-main-contacto__form__info">
+                <h2 class="fs-4">Información</h2>
+                <hr>
+
+                <section class="my-5">
+                    <h2 class="fs-4"><i class="fa-solid fa-location-dot me-2 fs-6"></i>Dirección</h2>
+                    <p>Av. Dr. Ricardo Balbín 4521</p>
+                    <p>Ciudad Autónoma de Buenos Aires</p>
+                    <p>Tel: (+54 11) 7079 1148</p>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="fs-4"><i class="fa-solid fa-phone me-2 fs-6"></i>WhatsApp</h2>
+                    <p>Por consultas acerca de tu pedido ya realizado:</p>
+                    <p>WhatsApp: (+54 11) 2551 6744 </p>
+                    <p>Por consultas para realizar un pedido:</p>
+                    <p>WhatsApp: (+54 11) 1933 1120 </p>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="fs-4"><i class="fa-solid fa-envelope me-2 fs-6"></i>Atención al cliente</h2>
+                    <p>ventas@hard-net.com</p>
+                    <p>Por consultas de garantias comunicase a: rma@hard-net.com</p>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="fs-4"><i class="fa-solid fa-users me-2 fs-6"></i>Atención</h2>
+                    <p>Lunes a Viernes de 10:00 a 19:00hs.</p>
+                    <p>Sábados de 10:00 a 14:00hs.</p>
+                </section>
+
+            </section>
+
+            <!-- Formulario + Mapa -->
+
+            <section class="site-main-contacto__contact">
+
+                <form class="site-main-contacto__form">
+                    <h2 class="fs-4">Dejanos tu consulta</h2>
+                    <hr>
+                    <p>Te responderemos a la brevedad.</p>
+
+                    <div class="site-main-contacto__form__row">
+                        <div>
+                            <label for="nombre">Nombre <span>*</span></label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div>
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <div>
+                        <label for="consulta">Ingresá tu consulta <span>*</span></label>
+                        <textarea id="consulta" name="consulta" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <div class="site-main-contacto__form__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.454466568202!2d-58.74573191095366!3d-34.567365485866254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc96290522de49%3A0x81b5ccdcead0603d!2sAv.%20Dr.%20Ricardo%20Balb%C3%ADn%204521%2C%20B1663NFG%20Gran%20Buenos%20Aires%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1756053087032!5m2!1ses!2sar"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="site-footer__inner">
+
+            <div class="site-footer__content">
+                <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
+                <section>
+                    <p>Venta de PC, componentes y servicios informáticos en Argentina.</p>
+                    <p>(11) 2150-9885</p>
+                    <p>ventas@hard-net.com.ar</p>
+                    <p>Rivadavia 17939 Morón Buenos Aires</p>
+                    <p>
+                        &copy; 2025 HARD.net - Todos los derechos reservados.
+                    </p>
+                </section>
+            </div>
+
+            <div class="site-footer__info">
+                <ul>
+                    <li class="site-footer__info-item"><a href="../pages/productos.html">Productos</a></li>
+                    <li class="site-footer__info-item"><a href="../pages/servicios.html">Servicios</a></li>
+                    <li class="site-footer__info-item"><a href="../pages/ofertas.html">Ofertas</a></li>
+                    <li class="site-footer__info-item"><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__redes">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

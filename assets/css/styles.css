@@ -1,0 +1,344 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+
+  /* COLORES */
+  --color-primary: #101010;
+  --color-secondary: #9911b9;
+  --color-terciary: #f7af02;
+  --color-background-primary: #f2f2f2;
+  --color-background-secondary: #aacaf0;
+
+  /* ESPACIADOS */
+
+  --space-xxs: 0.25rem;
+  /* 4px */
+  --space-xs: 0.5rem;
+  /* 8px */
+  --space-sm: 1rem;
+  /* 16px */
+  --space-md: 1.5rem;
+  /* 24px */
+  --space-lg: 2rem;
+  /* 32px */
+  --space-xl: 3rem;
+  /* 48px */
+  --space-xxl: 4rem;
+  /* 64px */
+
+}
+
+/* Fonts locales */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Configuraciones iniciales */
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  background-color: var(--color-background-primary) !important;
+  color: #111;
+}
+
+
+/* Main */
+
+.site-header__nav {
+  background-color: var(--color-primary);
+}
+
+.site-header__logo img {
+  height: 2rem;
+}
+
+.site-header__link {
+  text-transform: uppercase;
+}
+
+.site-header__item .active {
+  color: var(--color-terciary) !important;
+}
+
+.site-header__i {
+  color: white;
+  cursor: pointer;
+}
+
+.site-header__i:hover {
+  color: var(--color-terciary);
+}
+
+/* FOOTER */
+
+.site-footer {
+  padding: var(--space-xxl) 0;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.site-footer img {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer section p {
+  margin-bottom: 0.5rem;
+}
+
+.site-footer__info ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.site-footer__info-item a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.site-footer__redes i {
+  color: var(--color-terciary);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* HOME */
+
+.site-main-home__beneficios {
+  background-color: black;
+  font-size: 22px;
+}
+
+.site-main-home__beneficios-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.site-main-home__beneficios p {
+  color: white;
+}
+
+.site-main-home__beneficios-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.site-main-home__beneficios-info i {
+  color: white;
+  font-size: 2rem;
+}
+
+/* OFERTAS */
+
+.site-main-ofertas {
+  background-color: var(--color-background-primary);
+}
+
+.site-main-ofertas__content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
+}
+
+.site-main-ofertas__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.site-main-ofertas__content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+}
+
+.site-main-ofertas__categories-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-main-ofertas__categories-group .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9e9e9;
+  border: 1px solid #ccc;
+  color: #000;
+  padding: var(--space-sm);
+  text-decoration: none;
+}
+
+.site-main-ofertas__categories .site-main-ofertas__categories-group .list-group-item:hover {
+  background-color: var(--color-background-secondary);
+}
+
+.site-main-ofertas__categories-group .categoria-label {
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.site-main-ofertas__categories-group .flecha {
+  margin-left: auto;
+}
+
+/* CONTACTO */
+
+.site-main-contacto__layout {
+  display: flex;
+  flex-wrap: wrap; /* Para que en pantallas chicas se apilen */
+  gap: 2rem;
+}
+
+.site-main-contacto__form__info {
+  flex: 1;
+  background-color: var(--color-background-secondary);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  line-height: 1.8;
+  min-width: 280px;
+}
+
+.site-main-contacto__contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.site-main-contacto__form {
+  background-color: var(--color-background-secondary);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.site-main-contacto__form label span {
+  color: red;
+}
+
+.site-main-contacto__form__row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.site-main-contacto__form__row div {
+  flex: 1;
+}
+
+.site-main-contacto__form > div {
+  margin-bottom: 1rem;
+}
+
+.site-main-contacto__form input,
+.site-main-contacto__form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.site-main-contacto__form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.site-main-contacto__form button {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+
+.site-main-contacto__form__map iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 22rem;
+}
+
+/* MEDIAS QUERY */
+
+/* CONTACTO */
+
+@media (max-width: 800px) {
+
+.site-main-contacto__form__row {
+  flex-direction: column;
+}
+
+}
+
