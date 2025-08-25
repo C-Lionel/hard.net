@@ -211,6 +211,10 @@ html, body {
     padding: 0 10px;
 }
 
+.site-main-home__banner-img-responsive {
+  display: none;
+} 
+
 
 /* OFERTAS */
 
@@ -357,15 +361,46 @@ html, body {
 
 /* HOME */
 
+@media (max-width: 1200px) {
+  .site-main-home__banner-info h2 {
+    font-size: 1.3rem;
+  }
+  .site-main-home__banner-info p {
+    font-size: 0.8rem;
+  }
+  .site-main-home__banner-info a {
+    font-size: 0.6rem;
+  }
+}
+
 @media (max-width: 992px) {
   .site-main-home__beneficios-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 y 2 en tablet */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-main-home__banner-img img.site-main-home__banner-img {
+  display: none;
+}
+
+.site-main-home__banner-img img.site-main-home__banner-img-responsive {
+  display: block;
+}
+
+}
+
+@media (max-width: 766px) {
+ 
+  .site-main-home__banner-info p {
+    font-size: 0.6rem;
+  }
+  .site-main-home__banner-info a {
+    font-size: 0.5rem;
   }
 }
 
 @media (max-width: 576px) {
   .site-main-home__beneficios-container {
-    grid-template-columns: 1fr; /* 1 debajo de otro en mobile */
+    grid-template-columns: 1fr; 
   }
 }
 
