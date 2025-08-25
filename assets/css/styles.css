@@ -193,6 +193,22 @@ html, body {
   font-size: 2rem;
 }
 
+.site-main-home__banner {
+    position: relative;
+}
+
+.site-main-home__banner-info {
+    position: absolute;
+    top: 50%;               /* sigue centrado verticalmente */
+    left: 75%;              /* lo movemos hacia la derecha */
+    transform: translate(-50%, -50%); /* mantiene la vertical centrada y ajusta horizontal */
+    color: white;
+    text-align: left;       /* opcional: alineamos el texto a la izquierda */
+    max-width: 40%;         /* reducimos un poco el ancho si es necesario */
+    padding: 0 10px;
+}
+
+
 /* OFERTAS */
 
 .site-main-ofertas {
@@ -251,7 +267,7 @@ html, body {
 
 .site-main-contacto__layout {
   display: flex;
-  flex-wrap: wrap; /* Para que en pantallas chicas se apilen */
+  flex-wrap: wrap; 
   gap: 2rem;
 }
 
@@ -323,11 +339,15 @@ html, body {
   width: 100%;
 }
 
+.site-main-contacto__form__map {
+  flex: 1; 
+  display: flex;
+}
+
 
 .site-main-contacto__form__map iframe {
   border-radius: 10px;
-  width: 100%;
-  height: 22rem;
+  height: auto;
 }
 
 /* MEDIAS QUERY */
