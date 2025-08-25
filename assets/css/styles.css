@@ -206,15 +206,12 @@ html, body {
     left: 75%;              /* lo movemos hacia la derecha */
     transform: translate(-50%, -50%); /* mantiene la vertical centrada y ajusta horizontal */
     color: white;
-    text-align: left;       /* opcional: alineamos el texto a la izquierda */
-    max-width: 40%;         /* reducimos un poco el ancho si es necesario */
-    padding: 0 10px;
+    text-align: left;      
 }
 
 .site-main-home__banner-img-responsive {
   display: none;
 } 
-
 
 /* OFERTAS */
 
@@ -389,6 +386,10 @@ html, body {
 }
 
 @media (max-width: 766px) {
+
+  .site-main-home__banner-info h2 {
+    font-size: 1.1rem;
+  }
  
   .site-main-home__banner-info p {
     font-size: 0.6rem;
@@ -401,6 +402,19 @@ html, body {
 @media (max-width: 576px) {
   .site-main-home__beneficios-container {
     grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 450px) {
+   .site-main-home__banner-info h2 {
+    font-size: 1rem;
+  }
+ 
+  .site-main-home__banner-info p {
+    font-size: 0.5rem;
+  }
+  .site-main-home__banner-info a {
+    font-size: 0.4rem;
   }
 }
 
