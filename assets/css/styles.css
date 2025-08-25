@@ -93,7 +93,7 @@ html, body {
 }
 
 
-/* Main */
+/* MAIN */
 
 .site-header__nav {
   background-color: var(--color-primary);
@@ -166,18 +166,15 @@ html, body {
 /* HOME */
 
 .site-main-home__beneficios {
-  background-color: black;
-  font-size: 22px;
+  background-color: var(--color-primary);
+  border-bottom: 4px solid var(--color-terciary);
+  font-size: 1.2rem;
 }
 
 .site-main-home__beneficios-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.site-main-home__beneficios p {
-  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem;
 }
 
 .site-main-home__beneficios-info {
@@ -188,8 +185,14 @@ html, body {
   text-align: center;
 }
 
+
+.site-main-home__beneficios p {
+  color: var(--color-background-primary);
+}
+
+
 .site-main-home__beneficios-info i {
-  color: white;
+  color: var(--color-secondary);
   font-size: 2rem;
 }
 
@@ -352,6 +355,20 @@ html, body {
 
 /* MEDIAS QUERY */
 
+/* HOME */
+
+@media (max-width: 992px) {
+  .site-main-home__beneficios-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 y 2 en tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .site-main-home__beneficios-container {
+    grid-template-columns: 1fr; /* 1 debajo de otro en mobile */
+  }
+}
+
 /* CONTACTO */
 
 @media (max-width: 800px) {
@@ -361,4 +378,6 @@ html, body {
 }
 
 }
+
+
 
