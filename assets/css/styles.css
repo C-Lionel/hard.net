@@ -217,10 +217,9 @@ html, body {
 
 /* OFERTAS */
 
-
 .site-main-ofertas__content {
   display: grid;
-  grid-template-columns: 250px 1fr; 
+  grid-template-columns: 20rem 1fr; 
   gap: 2rem; 
 }
 
@@ -444,10 +443,6 @@ html, body {
     grid-template-columns: 1fr; 
   }
 
-  /* .site-main-ofertas__cards-busqueda {
-  display: flex;
-  justify-content: space-evenly;
-} */
 }
 
 
