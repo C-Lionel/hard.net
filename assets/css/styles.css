@@ -432,6 +432,15 @@ html, body {
   }
 }
 
+/* PRODUCTOS */
+
+@media (max-width: 991px) {
+  .btn-responsive {
+    font-size: 0.65rem; 
+  }
+}
+
+
 /* OFERTAS */
 
 @media (max-width: 991px) {
