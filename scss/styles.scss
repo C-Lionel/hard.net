@@ -1,0 +1,23 @@
+// BASE
+@use 'base/generales';
+@use 'base/variables';
+@use 'base/fonts';
+
+// COMPONENTS
+@use 'components/header';
+@use 'components/footer';
+
+// SECTIONS
+@use 'sections/home';
+@use 'sections/ofertas';
+@use 'sections/contacto';
+
+// QUERIES
+@use 'queries/queries';
+
+
+
+
+
+
+

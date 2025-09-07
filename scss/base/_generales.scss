@@ -1,0 +1,20 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONFIGURACIONES INICIALES */
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  background-color: var(--color-background-primary);
+  color: #111;
+}

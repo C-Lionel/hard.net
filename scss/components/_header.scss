@@ -1,0 +1,26 @@
+/* HEADER */
+
+.site-header__nav {
+  background-color: var(--color-primary);
+}
+
+.site-header__logo img {
+  height: 2rem;
+}
+
+.site-header__link {
+  text-transform: uppercase;
+}
+
+.site-header__item .active {
+  color: var(--color-terciary) !important;
+}
+
+.site-header__i {
+  color: white;
+  cursor: pointer;
+}
+
+.site-header__i:hover {
+  color: var(--color-terciary);
+}

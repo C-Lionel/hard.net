@@ -1,23 +1,30 @@
 /* RESET */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIABLES */
-:root {
+/* CONFIGURACIONES INICIALES */
+html, body {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  background-color: var(--color-background-primary);
+  color: #111;
+}
 
+:root {
   /* COLORES */
   --color-primary: #101010;
   --color-secondary: #9911b9;
   --color-terciary: #f7af02;
   --color-background-primary: #f2f2f2;
   --color-background-secondary: #aacaf0;
-
   /* ESPACIADOS */
-
   --space-xxs: 0.25rem;
   /* 4px */
   --space-xs: 0.5rem;
@@ -32,69 +39,46 @@
   /* 48px */
   --space-xxl: 4rem;
   /* 64px */
-
 }
 
 /* FONTS LOCALES */
-
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-Italic.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-Medium.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-MediumItalic.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-BoldItalic.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
-
-/* CONFIGURACIONES INICIALES */
-
-html, body {
-  height: 100%;
-  font-size: 16px;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-style: normal;
-  scroll-behavior: smooth;
-  background-color: var(--color-background-primary);
-  color: #111;
-}
-
-
-/* MAIN */
-
+/* HEADER */
 .site-header__nav {
   background-color: var(--color-primary);
 }
@@ -121,7 +105,6 @@ html, body {
 }
 
 /* FOOTER */
-
 .site-footer {
   background-color: var(--color-primary);
   color: white;
@@ -166,11 +149,8 @@ html, body {
 }
 
 /* HOME */
-
 .site-main-home__beneficios {
-  background: linear-gradient(135deg,
-      var(--color-primary) 0%,
-      var(--color-secondary) 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   border-bottom: 4px solid var(--color-terciary);
   font-size: 1.2rem;
 }
@@ -189,11 +169,9 @@ html, body {
   text-align: center;
 }
 
-
 .site-main-home__beneficios p {
   color: var(--color-background-primary);
 }
-
 
 .site-main-home__beneficios-info i {
   color: var(--color-terciary);
@@ -218,7 +196,6 @@ html, body {
 }
 
 /* OFERTAS */
-
 .site-main-ofertas__content {
   display: grid;
   grid-template-columns: 20rem 1fr;
@@ -229,7 +206,6 @@ html, body {
   display: grid;
   grid-template-columns: 1fr;
 }
-
 
 .site-main-ofertas__categories-header {
   display: flex;
@@ -253,7 +229,6 @@ html, body {
 }
 
 /* CONTACTO */
-
 .site-main-contacto__layout {
   display: flex;
   flex-wrap: wrap;
@@ -298,7 +273,7 @@ html, body {
   flex: 1;
 }
 
-.site-main-contacto__form>div {
+.site-main-contacto__form > div {
   margin-bottom: 1rem;
 }
 
@@ -333,140 +308,105 @@ html, body {
   display: flex;
 }
 
-
 .site-main-contacto__form__map iframe {
   border-radius: 10px;
   height: auto;
 }
 
 /* MEDIAS QUERY */
-
 /* FOOTER */
-
 @media (max-width: 768px) {
   .site-footer__inner {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-
   .site-footer__info ul {
     padding: 0;
   }
-
   .site-footer__redes {
     margin-top: 1rem;
   }
-
   .site-footer__content,
   .site-footer__info,
   .site-footer__redes {
     flex: 1 1 100%;
   }
-
 }
-
 /* HOME */
-
 @media (max-width: 1200px) {
   .site-main-home__banner-info h2 {
     font-size: 1.3rem;
   }
-
   .site-main-home__banner-info p {
     font-size: 0.8rem;
   }
-
   .site-main-home__banner-info a {
     font-size: 0.6rem;
   }
 }
-
 @media (max-width: 991px) {
   .site-main-home__beneficios-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .site-main-home__banner-img img.site-main-home__banner-img {
     display: none;
   }
-
   .site-main-home__banner-img img.site-main-home__banner-img-responsive {
     display: block;
   }
-
 }
-
 @media (max-width: 766px) {
-
   .site-main-home__banner-info h2 {
     font-size: 1.1rem;
   }
-
   .site-main-home__banner-info p {
     font-size: 0.6rem;
   }
-
   .site-main-home__banner-info a {
     font-size: 0.5rem;
   }
 }
-
 @media (max-width: 576px) {
   .site-main-home__beneficios-container {
     grid-template-columns: 1fr;
     row-gap: 5rem;
   }
-
   .site-main-home__carousel {
     display: none;
   }
-
 }
-
 @media (max-width: 450px) {
   .site-main-home__banner-info h2 {
     font-size: 1rem;
   }
-
   .site-main-home__banner-info p {
     font-size: 0.5rem;
   }
-
   .site-main-home__banner-info a {
     font-size: 0.4rem;
   }
 }
-
 /* PRODUCTOS */
-
 @media (max-width: 991px) {
   .btn-responsive {
     font-size: 0.65rem;
   }
 }
-
-
 /* OFERTAS */
-
 @media (max-width: 991px) {
   .site-main-ofertas__categories {
     display: none;
   }
-
   .site-main-ofertas__content {
     grid-template-columns: 1fr;
   }
-
 }
-
-
 /* CONTACTO */
-
 @media (max-width: 800px) {
-
   .site-main-contacto__form__row {
     flex-direction: column;
   }
-
 }
+
+/*# sourceMappingURL=styles.css.map */

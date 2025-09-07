@@ -1,0 +1,132 @@
+
+/* MEDIAS QUERY */
+
+/* FOOTER */
+
+@media (max-width: 768px) {
+  .site-footer__inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .site-footer__info ul {
+    padding: 0;
+  }
+
+  .site-footer__redes {
+    margin-top: 1rem;
+  }
+
+  .site-footer__content,
+  .site-footer__info,
+  .site-footer__redes {
+    flex: 1 1 100%;
+  }
+
+}
+
+/* HOME */
+
+@media (max-width: 1200px) {
+  .site-main-home__banner-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .site-main-home__banner-info p {
+    font-size: 0.8rem;
+  }
+
+  .site-main-home__banner-info a {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .site-main-home__beneficios-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-main-home__banner-img img.site-main-home__banner-img {
+    display: none;
+  }
+
+  .site-main-home__banner-img img.site-main-home__banner-img-responsive {
+    display: block;
+  }
+
+}
+
+@media (max-width: 766px) {
+
+  .site-main-home__banner-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .site-main-home__banner-info p {
+    font-size: 0.6rem;
+  }
+
+  .site-main-home__banner-info a {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-main-home__beneficios-container {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .site-main-home__carousel {
+    display: none;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .site-main-home__banner-info h2 {
+    font-size: 1rem;
+  }
+
+  .site-main-home__banner-info p {
+    font-size: 0.5rem;
+  }
+
+  .site-main-home__banner-info a {
+    font-size: 0.4rem;
+  }
+}
+
+/* PRODUCTOS */
+
+@media (max-width: 991px) {
+  .btn-responsive {
+    font-size: 0.65rem;
+  }
+}
+
+
+/* OFERTAS */
+
+@media (max-width: 991px) {
+  .site-main-ofertas__categories {
+    display: none;
+  }
+
+  .site-main-ofertas__content {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* CONTACTO */
+
+@media (max-width: 800px) {
+
+  .site-main-contacto__form__row {
+    flex-direction: column;
+  }
+
+}
