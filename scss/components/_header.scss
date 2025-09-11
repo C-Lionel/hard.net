@@ -1,26 +1,28 @@
-/* HEADER */
+@use '../base/variables' as *;
 
-.site-header__nav {
-  background-color: var(--color-primary);
-}
+.site-header {
+  &__nav {
+    background-color: $color-primary;
+  }
 
-.site-header__logo img {
-  height: 2rem;
-}
+  &__logo img {
+    height: 2rem;
+  }
 
-.site-header__link {
-  text-transform: uppercase;
-}
+  &__link {
+    text-transform: uppercase;
+  }
 
-.site-header__item .active {
-  color: var(--color-terciary) !important;
-}
+  &__item .active {
+    color: $color-terciary !important;
+  }
 
-.site-header__i {
-  color: white;
-  cursor: pointer;
-}
+  &__i {
+    color: white;
+    cursor: pointer;
+  }
 
-.site-header__i:hover {
-  color: var(--color-terciary);
+  &__i:hover {
+    color: $color-terciary;
+  }
 }

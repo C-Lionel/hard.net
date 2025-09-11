@@ -1,27 +1,27 @@
 
-/* MEDIAS QUERY */
-
 /* FOOTER */
 
 @media (max-width: 768px) {
-  .site-footer__inner {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
 
-  .site-footer__info ul {
-    padding: 0;
-  }
-
-  .site-footer__redes {
-    margin-top: 1rem;
-  }
-
-  .site-footer__content,
-  .site-footer__info,
-  .site-footer__redes {
-    flex: 1 1 100%;
+  .site-footer {
+    &__inner {
+       flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    &__info {
+      ul {
+           padding: 0;
+      }
+    }
+    &__redes {
+          margin-top: 1rem;
+    }
+    &__content,
+    &__info,
+    &__redes {
+      flex: 1 1 100%;
+    }
   }
 
 }
@@ -29,93 +29,117 @@
 /* HOME */
 
 @media (max-width: 1200px) {
-  .site-main-home__banner-info h2 {
-    font-size: 1.3rem;
-  }
 
-  .site-main-home__banner-info p {
-    font-size: 0.8rem;
-  }
-
-  .site-main-home__banner-info a {
-    font-size: 0.6rem;
+  .site-main-home {
+    &__banner__info {
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+      a {
+         font-size: 0.6rem;
+      }
+    }
   }
 }
 
 @media (max-width: 991px) {
-  .site-main-home__beneficios-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .site-main-home__banner-img img.site-main-home__banner-img {
-    display: none;
-  }
+  .site-main-home {
+    &__beneficios__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__banner__img {
+      display: none;
+    }
+    &__banner__img-responsive {
+      display: block;
+    }
 
-  .site-main-home__banner-img img.site-main-home__banner-img-responsive {
-    display: block;
   }
 
 }
 
 @media (max-width: 766px) {
 
-  .site-main-home__banner-info h2 {
-    font-size: 1.1rem;
+  .site-main-home {
+    &__banner {
+      &__info {
+        h2 {
+           font-size: 1.1rem;
+        }
+        p {
+          font-size: 0.6rem;
+        }
+        a {
+           font-size: 0.5rem;
+        }
+      }
+    }
   }
 
-  .site-main-home__banner-info p {
-    font-size: 0.6rem;
-  }
-
-  .site-main-home__banner-info a {
-    font-size: 0.5rem;
-  }
 }
 
 @media (max-width: 576px) {
-  .site-main-home__beneficios-container {
-    grid-template-columns: 1fr;
-    row-gap: 5rem;
-  }
 
-  .site-main-home__carousel {
-    display: none;
+  .site-main-home {
+    &__beneficios {
+      &__container {
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+      }
+    }
+    &__carousel {
+        display: none;
+    }
   }
 
 }
 
 @media (max-width: 450px) {
-  .site-main-home__banner-info h2 {
-    font-size: 1rem;
+
+  .site-main-home {
+    &__banner {
+      &__info {
+        h2 {
+           font-size: 1rem;
+        }
+        p {
+           font-size: 0.5rem;
+        }
+        a {
+           font-size: 0.4rem;
+        }
+      }
+    }
   }
 
-  .site-main-home__banner-info p {
-    font-size: 0.5rem;
-  }
-
-  .site-main-home__banner-info a {
-    font-size: 0.4rem;
-  }
 }
 
 /* PRODUCTOS */
 
 @media (max-width: 991px) {
+
   .btn-responsive {
     font-size: 0.65rem;
   }
+
 }
 
 
 /* OFERTAS */
 
 @media (max-width: 991px) {
-  .site-main-ofertas__categories {
-    display: none;
-  }
 
-  .site-main-ofertas__content {
-    grid-template-columns: 1fr;
+  .site-main-ofertas {
+    &__categories {
+      display: none;
+    }
+    &__content {
+      grid-template-columns: 1fr;
+    }
   }
 
 }
@@ -123,10 +147,17 @@
 
 /* CONTACTO */
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
 
-  .site-main-contacto__form__row {
-    flex-direction: column;
+  .site-main-contacto {
+    &__form {
+      &__row {
+            flex-direction: column;
+      }
+    }
+    &__layout {
+      flex-direction: column;
+    }
   }
-
+  
 }
