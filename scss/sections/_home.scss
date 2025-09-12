@@ -1,13 +1,19 @@
 @use '../base/variables' as *;
+@use 'sass:map';
+@use '../utilities/maps' as maps;
 
 .site-main-home {
 
   &__beneficios {
 
+    // background: linear-gradient(135deg,
+    //     $color-primary 0%,
+    //     $color-secondary 100%);
     background: linear-gradient(135deg,
-        $color-primary 0%,
-        $color-secondary 100%);
-    border-bottom: 4px solid $color-terciary;
+         map.get(maps.$colors, primary) 0%,
+         map.get(maps.$colors, secondary) 100%);
+    // border-bottom: 4px solid $color-terciary;
+    border-bottom: 4px solid map.get(maps.$colors, terciary);
     font-size: 1.2rem;
 
     &__container {
@@ -25,11 +31,13 @@
         text-align: center;
 
         p {
-          color: $color-background-primary;
+          // color: $color-background-primary;
+          color: map.get(maps.$colors, background-primary);
         }
 
         i {
-            color: $color-terciary;
+            // color: $color-terciary;
+            color: map.get(maps.$colors, terciary);
             font-size: 2rem;
         }
       }

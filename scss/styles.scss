@@ -1,6 +1,11 @@
+/* No hace falta poner @use 'utilities/maps' ni @use 'base/variables' en styles.scss.
+ Si lo único que hacen es proveer variables que usan los partials. 
+ Cada partial debe importar lo que necesite. */
+
+
 // BASE
 @use 'base/generales';
-@use 'base/variables';
+// @use 'base/variables';
 @use 'base/fonts';
 
 // COMPONENTS
@@ -14,6 +19,9 @@
 
 // QUERIES
 @use 'queries/queries';
+
+// UTILITIES
+// @use 'utilities/maps';
 
 
 

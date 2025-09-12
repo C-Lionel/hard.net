@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'sass:map';
+@use '../utilities/maps' as maps;
 
 /* RESET */
 
@@ -17,6 +19,7 @@ html, body {
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
-  background-color: $color-background-primary;
+  // background-color: $color-background-primary;
+  background-color: map.get(maps.$colors, background-primary);
   color: #111;
 }

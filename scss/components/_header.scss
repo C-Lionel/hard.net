@@ -1,8 +1,11 @@
 @use '../base/variables' as *;
+@use 'sass:map';
+@use '../utilities/maps' as maps;
 
 .site-header {
   &__nav {
-    background-color: $color-primary;
+    // background-color: $color-primary;
+    background-color: map.get(maps.$colors, primary);
   }
 
   &__logo img {
@@ -14,7 +17,8 @@
   }
 
   &__item .active {
-    color: $color-terciary !important;
+    // color: $color-terciary !important;
+    color: map.get(maps.$colors, terciary) !important;
   }
 
   &__i {
@@ -23,6 +27,7 @@
   }
 
   &__i:hover {
-    color: $color-terciary;
+    // color: $color-terciary;
+    color: map.get(maps.$colors, terciary) !important;
   }
 }

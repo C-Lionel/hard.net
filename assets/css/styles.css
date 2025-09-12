@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* No hace falta poner @use 'utilities/maps' ni @use 'base/variables' en styles.scss.
+ Si lo único que hacen es proveer variables que usan los partials. 
+ Cada partial debe importar lo que necesite. */
 /* RESET */
 * {
   margin: 0;
@@ -71,7 +75,7 @@ html, body {
   cursor: pointer;
 }
 .site-header__i:hover {
-  color: #f7af02;
+  color: #f7af02 !important;
 }
 
 .site-footer {

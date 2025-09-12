@@ -1,8 +1,11 @@
 @use '../base/variables' as *;
+@use 'sass:map';
+@use '../utilities/maps' as maps;
 
 
 .site-footer {
-  background-color: $color-primary;
+  // background-color: $color-primary;
+  background-color: map.get(maps.$colors, primary);
   color: white;
   text-align: center;
 
@@ -42,7 +45,8 @@
 
   &__redes {
     i {
-      color: $color-terciary;
+      // color: $color-terciary;
+      color: map.get(maps.$colors, terciary);
       cursor: pointer;
     }
   }

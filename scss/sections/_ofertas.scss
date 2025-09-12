@@ -1,4 +1,6 @@
 @use '../base/variables' as *;
+@use 'sass:map';
+@use '../utilities/maps' as maps;
 
 .site-main-ofertas {
   &__content {
@@ -28,7 +30,8 @@
           text-decoration: none;
       }
       .list-group-item:hover {
-        background-color: $color-background-secondary;
+        // background-color: $color-background-secondary;
+        background-color: map.get(maps.$colors, background-secondary);
       }
 
     }
