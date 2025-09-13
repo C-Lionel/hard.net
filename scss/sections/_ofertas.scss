@@ -1,6 +1,7 @@
 @use '../base/variables' as *;
 @use 'sass:map';
 @use '../utilities/maps' as maps;
+@use '../utilities/animations' as anim;
 
 .site-main-ofertas {
   &__content {
@@ -12,6 +13,9 @@
   &__cards {
     display: grid;
     grid-template-columns: 1fr;
+    &__card {
+      @include anim.hover-card;
+    }
   }
 
   &__categories {

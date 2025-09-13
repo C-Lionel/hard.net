@@ -1,0 +1,9 @@
+
+@mixin hover-card($translateY: -5px, $shadow: 0 15px 25px rgba(0, 0, 0, 0.15), $duration: 0.3s) {
+  transition: transform $duration ease, box-shadow $duration ease;
+
+  &:hover {
+    transform: translateY($translateY);
+    box-shadow: $shadow;
+  }
+}

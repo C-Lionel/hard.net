@@ -1,0 +1,9 @@
+@use '../utilities/animations' as anim;
+
+.site-main-productos {
+    &__card {
+        position: relative;
+        overflow: hidden;
+        @include anim.hover-card;
+    }
+}

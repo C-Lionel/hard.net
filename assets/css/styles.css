@@ -188,6 +188,13 @@ html, body {
   display: grid;
   grid-template-columns: 1fr;
 }
+.site-main-ofertas__cards__card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.site-main-ofertas__cards__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
 .site-main-ofertas__categories__header {
   display: flex;
   align-items: center;
@@ -205,6 +212,16 @@ html, body {
 }
 .site-main-ofertas__categories__group .list-group-item:hover {
   background-color: #aacaf0;
+}
+
+.site-main-productos__card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.site-main-productos__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
 .site-main-contacto__layout {
