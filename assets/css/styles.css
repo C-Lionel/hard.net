@@ -123,10 +123,21 @@ html, body {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.site-footer__info-item a:hover {
+  transform: scale(1.1);
 }
 .site-footer__redes i {
   color: #f7af02;
   cursor: pointer;
+  transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+}
+.site-footer__redes i:hover {
+  transform: translateY(-3px);
+  color: rgb(253.313253012, 192.5903614458, 46.686746988);
+  text-shadow: 0 2px 6px rgba(247, 175, 2, 0.3);
 }
 
 .site-main-home__beneficios {
@@ -253,6 +264,12 @@ html, body {
   background-color: #9911b9;
   margin-top: 1rem;
   width: 100%;
+}
+.site-main-contacto__form button:hover {
+  transform: scale(1.015);
+  background-color: #9911b9;
+  color: #f2f2f2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
 }
 .site-main-contacto__form__map {
   flex: 1;

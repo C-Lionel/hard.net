@@ -85,6 +85,13 @@
             width: 100%;
         }
 
+        button:hover {
+            transform: scale(1.015); 
+            background-color: $color-secondary; 
+            color: $color-background-primary; 
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); 
+        }
+
         &__map {
             flex: 1;
             display: flex;
