@@ -20,6 +20,8 @@ html, body {
   font-style: normal;
   scroll-behavior: smooth;
   // background-color: $color-background-primary;
+  
+  // Uso de maps
   background-color: map.get(maps.$colors, background-primary);
   color: #111;
 }

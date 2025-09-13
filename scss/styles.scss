@@ -2,6 +2,10 @@
  Si lo único que hacen es proveer variables que usan los partials. 
  Cada partial debe importar lo que necesite. */
 
+// UTILITIES
+// @use 'utilities/maps';
+// @use 'utilities/extends';
+
 
 // BASE
 @use 'base/generales';
@@ -20,8 +24,7 @@
 // QUERIES
 @use 'queries/queries';
 
-// UTILITIES
-// @use 'utilities/maps';
+
 
 
 

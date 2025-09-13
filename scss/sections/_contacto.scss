@@ -1,6 +1,8 @@
 @use '../base/variables' as *;
 @use 'sass:map';
 @use '../utilities/maps' as maps;
+@use '../utilities/extends';
+@use '../utilities/mixins' as mixins;
 
 .site-main-contacto {
 
@@ -12,11 +14,9 @@
 
     &__form__info {
         flex: 1;
-        //   background-color: $color-background-secondary;
         background-color: map.get( maps.$colors, background-secondary);
-        padding: 2rem;
-        border-radius: 0.5rem;
-        border: 1px solid black;
+        // Uso de mixinds con maps incluido
+        @include mixins.card-box(map.get(maps.$colors, background-secondary));
         line-height: 1.8;
         min-width: 280px;
     }
@@ -71,12 +71,16 @@
         button {
             // background-color: $color-secondary;
             background-color: map.get( maps.$colors, secondary);
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1.2rem;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
+            // padding: 0.5rem 1.2rem;
+            // font-weight: bold;
+            // border-radius: 5px;
+            // border: none;
+            // cursor: pointer;
+            // color: #fff;
+
+            // Uso de extend
+            @extend %btn-basic;
+            
             margin-top: 1rem;
             width: 100%;
         }

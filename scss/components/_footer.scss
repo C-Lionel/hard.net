@@ -1,6 +1,7 @@
 @use '../base/variables' as *;
 @use 'sass:map';
 @use '../utilities/maps' as maps;
+@use '../utilities/extends';
 
 
 .site-footer {
@@ -10,10 +11,13 @@
   text-align: center;
 
   &__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: flex-start;
+
+    // Uso de extends
+    @extend %flex-layout;
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem;
@@ -46,6 +50,8 @@
   &__redes {
     i {
       // color: $color-terciary;
+      
+      // Uso de maps
       color: map.get(maps.$colors, terciary);
       cursor: pointer;
     }

@@ -1,6 +1,7 @@
 @use '../base/variables' as *;
 @use 'sass:map';
 @use '../utilities/maps' as maps;
+@use '../utilities/extends';
 
 .site-header {
   &__nav {
@@ -27,7 +28,11 @@
   }
 
   &__i:hover {
+    // SE DEJAN REFERENCIAS PARA VER LOS DISTINTOS CASOS DE USO
     // color: $color-terciary;
-    color: map.get(maps.$colors, terciary) !important;
+    // color: map.get(maps.$colors, terciary) !important;
+    
+    // Uso del extend
+    @extend %clickable-icon;
   }
 }

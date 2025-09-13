@@ -1,0 +1,23 @@
+
+@mixin section-gradient($color-start, $color-end, $border-color, $border-width: 4px) {
+  background: linear-gradient(135deg, $color-start 0%, $color-end 100%);
+  border-bottom: $border-width solid $border-color;
+}
+
+@mixin flex-column-center($gap: 1rem, $text-align: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $gap;
+  text-align: $text-align;
+}
+
+@mixin card-box($bg-color, $padding: 2rem, $radius: 0.5rem, $border: 1px solid black) {
+  background-color: $bg-color;
+  padding: $padding;
+  border-radius: $radius;
+  border: $border;
+}
+
+
+

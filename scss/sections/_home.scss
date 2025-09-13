@@ -1,19 +1,23 @@
 @use '../base/variables' as *;
 @use 'sass:map';
 @use '../utilities/maps' as maps;
+@use '../utilities/mixins' as mixins;
 
 .site-main-home {
 
   &__beneficios {
 
     // background: linear-gradient(135deg,
-    //     $color-primary 0%,
-    //     $color-secondary 100%);
-    background: linear-gradient(135deg,
-         map.get(maps.$colors, primary) 0%,
-         map.get(maps.$colors, secondary) 100%);
-    // border-bottom: 4px solid $color-terciary;
-    border-bottom: 4px solid map.get(maps.$colors, terciary);
+    //     map.get(maps.$colors, primary) 0%,
+    //     map.get(maps.$colors, secondary) 100%);
+    // border-bottom: 4px solid map.get(maps.$colors, terciary);
+
+    // Uso de mixins
+    @include mixins.section-gradient(map.get(maps.$colors, primary),
+      map.get(maps.$colors, secondary),
+      map.get(maps.$colors, terciary));
+
+
     font-size: 1.2rem;
 
     &__container {
@@ -24,11 +28,15 @@
 
       &__info {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        text-align: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 1rem;
+        // text-align: center;
+
+        // Uso de mixins
+        @include mixins.flex-column-center(1rem, center);
+        
 
         p {
           // color: $color-background-primary;
@@ -36,26 +44,28 @@
         }
 
         i {
-            // color: $color-terciary;
-            color: map.get(maps.$colors, terciary);
-            font-size: 2rem;
+          // color: $color-terciary;
+          color: map.get(maps.$colors, terciary);
+          font-size: 2rem;
         }
       }
     }
   }
 
   &__banner {
-      position: relative;
-      &__info {
-          position: absolute;
-          top: 50%;
-          left: 75%;
-          transform: translate(-50%, -50%);
-          color: white;
-          text-align: left;
-      }
-      &__img-responsive {
-          display: none;
-      }
+    position: relative;
+
+    &__info {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: left;
+    }
+
+    &__img-responsive {
+      display: none;
+    }
   }
 }
