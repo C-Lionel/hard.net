@@ -15,6 +15,11 @@
 
   &__link {
     text-transform: uppercase;
+    transition: transform 0.3s ease;
+  }
+
+  &__link:hover {
+    transform: scale(1.1);
   }
 
   &__item .active {

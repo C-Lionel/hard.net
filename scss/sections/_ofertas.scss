@@ -4,35 +4,40 @@
 
 .site-main-ofertas {
   &__content {
-      display: grid;
-      grid-template-columns: 20rem 1fr;
-      gap: 2rem;
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    gap: 2rem;
   }
+
   &__cards {
-      display: grid;
-      grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
   }
+
   &__categories {
     &__header {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+
     &__group {
+
       .list-group-item {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          // Uso de variables
-          background-color: $color-background-primary;
-          border: 1px solid #ccc;
-          color: #000;
-          padding: $space-sm;
-          text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // Uso de variables
+        background-color: $color-background-primary;
+        border: 1px solid #ccc;
+        color: #000;
+        padding: $space-sm;
+        text-decoration: none;
       }
+
       .list-group-item:hover {
         // background-color: $color-background-secondary;
-        
+
         // Uso de map
         background-color: map.get(maps.$colors, background-secondary);
       }
