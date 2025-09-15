@@ -12,7 +12,8 @@
 
 /* CONFIGURACIONES INICIALES */
 
-html, body {
+html,
+body {
   height: 100%;
   font-size: 16px;
   font-family: 'Inter';
@@ -20,10 +21,16 @@ html, body {
   font-style: normal;
   scroll-behavior: smooth;
   // background-color: $color-background-primary;
-  
+
   // Uso de maps
   background-color: map.get(maps.$colors, background-primary);
   color: #111;
 }
 
-
+.site-main-home,
+.site-main-productos,
+.site-main-servicios,
+.site-main-ofertas,
+.site-main-contacto {
+  padding-top: 60px;
+}
