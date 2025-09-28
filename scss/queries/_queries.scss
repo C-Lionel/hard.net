@@ -53,7 +53,7 @@
         font-size: 0.8rem;
       }
       a {
-         font-size: 0.6rem;
+         font-size: 0.8rem;
       }
     }
   }
@@ -87,9 +87,9 @@
         p {
           font-size: 0.6rem;
         }
-        a {
-           font-size: 0.5rem;
-        }
+        // a {
+        //    font-size: 0.5rem;
+        // }
       }
     }
   }
@@ -112,25 +112,25 @@
 
 }
 
-@media (max-width: 450px) {
+// @media (max-width: 450px) {
 
-  .site-main-home {
-    &__banner {
-      &__info {
-        h2 {
-           font-size: 1rem;
-        }
-        p {
-           font-size: 0.5rem;
-        }
-        a {
-           font-size: 0.4rem;
-        }
-      }
-    }
-  }
+//   .site-main-home {
+//     &__banner {
+//       &__info {
+//         h2 {
+//            font-size: 1rem;
+//         }
+//         p {
+//            font-size: 0.5rem;
+//         }
+//         a {
+//            font-size: 0.4rem;
+//         }
+//       }
+//     }
+//   }
 
-}
+// }
 
 /* PRODUCTOS */
 

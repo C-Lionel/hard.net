@@ -375,7 +375,7 @@ body {
     font-size: 0.8rem;
   }
   .site-main-home__banner__info a {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 991px) {
@@ -396,9 +396,6 @@ body {
   .site-main-home__banner__info p {
     font-size: 0.6rem;
   }
-  .site-main-home__banner__info a {
-    font-size: 0.5rem;
-  }
 }
 @media (max-width: 576px) {
   .site-main-home__beneficios__container {
@@ -407,17 +404,6 @@ body {
   }
   .site-main-home__carousel {
     display: none;
-  }
-}
-@media (max-width: 450px) {
-  .site-main-home__banner__info h2 {
-    font-size: 1rem;
-  }
-  .site-main-home__banner__info p {
-    font-size: 0.5rem;
-  }
-  .site-main-home__banner__info a {
-    font-size: 0.4rem;
   }
 }
 /* PRODUCTOS */
