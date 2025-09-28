@@ -332,6 +332,11 @@ body {
   margin-bottom: 12rem;
 }
 
+@media (max-width: 991px) {
+  .site-header__link:hover {
+    transform: none;
+  }
+}
 /* FOOTER */
 @media (max-width: 768px) {
   .site-footer__inner {
