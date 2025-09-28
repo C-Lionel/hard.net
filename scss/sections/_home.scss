@@ -47,6 +47,7 @@
           // color: $color-terciary;
           color: map.get(maps.$colors, terciary);
           font-size: 2rem;
+          animation: shine 2.5s ease-in-out infinite;
         }
       }
     }
